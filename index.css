@@ -1,0 +1,502 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+nav ul{
+    padding: 0;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blueviolet;}
+
+header{
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+li{
+    list-style: none;
+}
+
+nav li a{
+    margin: 10px;
+    color: blueviolet;
+    font-size: 1em;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    top: 30px;
+}
+
+nav li:hover ul{
+    display: block;
+}
+
+nav li li{
+    background-color: rgb(184, 191, 196);
+}
+
+header .logo2{
+    margin: 0;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+    display: block;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("media/hero.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#yo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("media/yop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#yo h1{
+    color: white;
+}
+
+#consulta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("media/consulta.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#consulta h1{
+    color: white;
+}
+
+#Sobre-mi .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#curri .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#wrapper .slider{
+    <style>{ 
+        margin:0; 
+        padding:0;
+        }
+        body{ background-color: #514E4E; 
+            text-align:center; 
+            font-family:"Lucida Grande","Lucida Sans Unicode";
+        }
+}
+        
+        .wrapper{ 
+            width:80%; 
+            height:100vh; 
+            background-color:#fff; 
+            margin:0 auto; 
+            overflow:hidden;
+        }
+                        
+        .wrapper h1{ 
+            font-family:channel; 
+            line-height:100px; 
+            font-size:21px;
+        }
+        
+        .slider{ 
+            width:100%;
+        }
+        
+        .slider ul{ 
+            list-style-type:none; 
+            width:400%; 
+            display:flex; 
+            animation:slider 5s infinite alternate;
+        }
+        
+        .slider li{ 
+            width:100%; 
+            float:left;
+        }
+        
+        .slider img{ 
+            width:100%; 
+            height:auto;
+        }
+
+        .slider li{
+            width: 100%;
+            float: left;
+        }
+    </style>
+
+.slider{
+    width: 100%;
+    height: 50%;
+}
+
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1,2,1.2);
+}
+
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+
+.delante{
+    right: 2%;
+    top: calc(50% -70px);
+}
+
+#Mas-cosas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#Mas-cosas .container{
+    padding: 50px 0px;
+}
+
+#Mas-cosas h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#Mas-cosas p{
+    display: none;
+}
+
+#Mas-cosas .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/curriculum-min.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/ilus.png")
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/cont.jpg");
+}
+
+#red-social .container{
+    text-align: center;
+    padding: 50px 10px;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@keyframes slider {
+            
+    0% 			{ margin-left:0;}
+    20% 		{ margin-left:0;}
+    
+    30% 		{ margin-left:-100%;}
+    50% 		{ margin-left:-100%;}
+    
+    60% 		{ margin-left:-200%;}
+    80% 		{ margin-left:-200%;}
+    
+    90% 		{ margin-left:-300%;}
+    100% 		{ margin-left:-300%;}
+    
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Sobre-mi .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Sobre-mi .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Sobre-mi h2{
+        margin-top: 0px;
+    }
+
+    #Sobre-mi .img-container{
+        background-image: url(media/perfil.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #curri .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #curri .texto{
+        width: 40%;
+        max-width: 500px;
+        text-align: initial;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #curri .img-container{
+        background-image: url(media/curriculum.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 750px;
+        width: 500px;
+    }
+
+    #consulta .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #consulta .texto{
+        width: 40%;
+        max-width: 500px;
+        text-align: initial;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #consulta .img-container{
+        background-image: url(media/consulta.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 750px;
+        width: 500px;
+    }
+
+    #Mas-cosas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Mas-cosas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Mas-cosas h3{
+        margin-top: 0;
+    }
+
+    #Mas-cosas .carta{
+        padding: 50px;
+    }
+
+    #red-social .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #red-social .texto{
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #red-social .img-container{
+        background-image: url(media/rds.png);
+        background-size: cover;
+        background-position: center center;
+        margin: 10px;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
