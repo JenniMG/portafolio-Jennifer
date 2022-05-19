@@ -335,6 +335,10 @@ header a:hover{
     padding: 50px 10px;
 }
 
+#map{
+    margin-left: 30px;
+}
+
 footer{
     background-color: rgb(230, 230, 230);
 }
